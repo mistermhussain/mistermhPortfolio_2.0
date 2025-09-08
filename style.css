@@ -193,7 +193,7 @@ color: crimson;
 
 /* Hero section style */
 #hero{
-  background-image: url(imgs/hero/img.jpg);
+  background-image: url("imgs/hero\ img.jpg");
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -238,6 +238,82 @@ color: crimson;
   #hero .cta{
     font-size: 1.6rem;
     padding: 8px 20px;
+  }
+}
+
+/* Mobile: Header spacing refinements */
+@media (max-width: 768px){
+  #header .header{
+    min-height: 10vh;
+  }
+}
+
+/* Mobile: Services responsive */
+@media (max-width: 768px){
+  #services .container{
+    padding: 60px 15px;
+  }
+  #services .services-top{
+    width: 100%;
+    margin: 10px auto 20px;
+    padding: 0 10px;
+  }
+  #services .services-bottom{
+    gap: 15px;
+  }
+  #services .services-bottom .service-item{
+    flex-basis: 100%;
+    margin: 0;
+    padding: 20px 16px;
+  }
+  #services .service-item h2{
+    font-size: 1.6rem;
+  }
+  #services .service-item p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+/* Mobile: About responsive */
+@media (max-width: 768px){
+  #about .about{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .col-left{
+    width: 220px;
+    height: 320px;
+    left: 0;
+    top: 0;
+    margin: 0 auto 20px;
+  }
+  #about .col-left .about-img{
+    border-width: 8px;
+    box-shadow: -10px 10px 8px crimson;
+  }
+  #about .col-left .about-img::after{
+    left: 20px;
+    top: 20px;
+    width: 96%;
+    height: 96%;
+  }
+  #about .col-right{
+    padding: 20px;
+    text-align: center;
+  }
+  #about .col-right h1{
+    text-align: center;
+  }
+}
+
+/* Mobile: Footer tweaks */
+@media (max-width: 768px){
+  #footer h2{
+    font-size: 1.4rem;
+  }
+  #footer p{
+    font-size: 1.1rem;
   }
 }
 
