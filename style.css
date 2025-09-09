@@ -193,7 +193,7 @@ color: crimson;
 
 /* Hero section style */
 #hero{
-  background-image: url("imgs/hero\ img.jpg");
+  background-image: url("imgs/hero_img.webp");
   background-size: cover;
   background-position: top center;
   position: relative;
